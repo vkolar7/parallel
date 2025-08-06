@@ -6,7 +6,7 @@ pipeline{
        stage ('BUILD_1'){
          steps {
            echo "Build_1 is running"
-           sh 'sleep 2'
+           sh 'sleep 4'
          }
        }
         stage ('Build_2'){
@@ -32,7 +32,7 @@ pipeline{
         stage ('Test_1'){
           steps {
             echo "Testing Build_1"
-            sh 'sleep 2'
+            sh 'sleep 4'
           }
         }
         stage ('Test_2'){
